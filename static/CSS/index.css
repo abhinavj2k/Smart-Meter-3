@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #e28743;
+    min-height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+.header{
+    text-align: center;
+    color: azure;
+}
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#voltage{
+    background-color: #dddddd;
+    box-sizing: unset;
+    margin: 10px;
+    padding: 2.5%;
+    font-size: 30px;
+    width: 44vw;
+    height: 24.5vw;
+    border-radius: 5%;
+}
+#current{
+    background-color: #dddddd;
+    box-sizing: unset;
+    margin: 10px;
+    padding: 2.5%;
+    font-size: 30px;
+    width: 44vw;
+    height: 24.5vw;
+    border-radius: 5%;
+}
+.vals{
+    width: 15vw;
+    margin: 0.5vw;
+    height: max-content;
+    text-align: center;
+    padding: 1%;
+    background-color: #dddddd;
+    border-radius: 5%;
+}
+#disp {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#disp td, #disp th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#disp th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #e28743;
+    color: white;
+}
+
+#disp tr {
+    background-color: #ffffff;
+}
+
+#disp tr:nth-child(even){background-color: #FFEFD5;}
+
+#disp tr:hover {background-color: #e28743;color: white;}
+

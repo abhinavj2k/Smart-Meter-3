@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Table Content</title>     
+        <link rel="stylesheet" type="text/css" href="../static/CSS/index.css"/>  
+    </head>
+    <body>
+        <table id="disp">
+            <tr>
+              <th>Receive Time Stamp</th>
+              <th>Voltage</th>
+              <th>Current</th>
+              <th>Phase Angle</th>
+              <th>Power Factor</th>
+              <th>Frequency</th>
+              <th>Power</th>
+              <th>Energy</th>
+              <th>Tariff</th>
+            </tr>
+            {% for row in p %}
+            <tr>
+                {% for col in row %}
+                    <td>{{col}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+          </table>
+    </body>
+</html>
+

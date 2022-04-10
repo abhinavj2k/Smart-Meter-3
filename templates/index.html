@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Smart meter</title>
+        <script src='https://cdn.plot.ly/plotly-2.4.2.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../static/JS/index.js"></script>
+        <link rel="stylesheet" type="text/css" href="../static/CSS/index.css"/>
+    </head>
+    <body>
+        <br>
+        <h1 class="header">Smart Meter</h1>
+        <br>
+        <div class="card">
+            <div id="voltage"></div>
+            <div id="current"></div>
+        </div>
+        <br>
+        <div class="card">
+            <div class="vals">
+                <h3>Power Factor</h3>
+                <h3 id="pf"></h3>
+            </div>
+            <div class="vals">
+                <h3>Frequency</h3>
+                <h3 id="hz"></h3>
+            </div>
+        </div>
+        <script>
+            window.setInterval(draw, 1000);
+        </script>
+    </body>
+</html>
+
